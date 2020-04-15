@@ -230,7 +230,7 @@ Media up
 
 @media(min-width: 575px)  {
     .container {
-        width: 1140px;
+        width: 1240px;
         max-width: 100%;
         margin: 0 auto;
     }
