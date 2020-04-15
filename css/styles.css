@@ -1,0 +1,382 @@
+* { box-sizing: border-box;}
+
+:root {
+    --clr-primary-pink: hsl(322, 100%, 66%);
+    --verypalecyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --clr-Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+    margin: 0;
+   font-family: 'Open Sans', sans-serif; 
+     font-size: 16px;
+     line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border-radius: 50px;
+    border:none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/*=================
+Typography
+=================*/
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-top: 4em;
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.hero-text {
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0 1em;
+    margin-bottom: 2.5em;
+}
+
+/*=================
+Header
+=================*/
+
+header {
+    background-image: url(/images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1.5em 2em;
+    background-color: hsl(193, 100%, 96%);
+    align-items: center;
+    text-align: center;
+}
+
+
+nav {    
+    display: flex;
+    justify-content: space-between;
+    max-height: 1.5em;
+}
+nav .logo {
+    max-width: 40%;
+}
+
+.btn-nav {
+    font-size: 0.7rem;
+    padding: 0.5em 2em;
+}
+
+.btn-herro{
+    padding: 0.8em 3.7em;
+    font-size: 0.65rem;
+    margin-bottom: 5em;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.herro-img {
+    width: 90%;
+}
+
+/*=================
+Main
+=================*/
+
+main {
+    padding: 3em 1.5em 2em 1em;
+}
+
+.feature {
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.feature h2 {
+    margin-top: 2em;
+    order: 2;
+    color: hsl(192, 100%, 9%);
+    font-size: 1rem;
+}
+
+.img-wrapper {
+    order: -1;
+}
+
+.feature-text {
+    color:  hsl(208, 11%, 55%);
+    font-size: 0.8rem;
+    margin-bottom: 2em;
+}
+
+/*=================
+Footer
+=================*/
+
+footer {
+    padding: 1em 2em 3em;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: 7em;
+    color: #fff;
+}
+
+.build-box {
+    color: var(--very-dark-cyan);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: translateY(-75%);
+}
+
+.build-box h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.build-box .btn {
+    padding: 1em 3em;
+    margin-bottom: 2em;
+    font-size: 0.55rem;
+    letter-spacing: 1.5px;
+}
+
+.contact-location, 
+.contact-tel,
+.contact-email {
+    display: flex;
+    margin-bottom: 1.5em;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.contact-location img, 
+.contact-tel img,
+.contact-email img {
+    margin-right: 1em;
+    height: 100%;
+}
+.contact-location img {
+    margin-top: 1.5em;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding-left: 0;
+}
+footer ul li {
+    margin-bottom: 0.5em;
+}
+
+footer ul a {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+.list-part2 {
+    margin-bottom: 3em;
+}
+
+.social-media-conainer{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media-conainer i {
+    display: inline-block;
+    padding: 0.6em;
+    border: 1px solid #fff;
+    border-radius: 50%
+}
+.copy {
+    margin-top: 3em;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+/*=================
+Media up
+=================*/
+
+@media(min-width: 575px)  {
+    .container {
+        width: 1140px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    nav {    
+        display: flex;
+        justify-content: space-between;
+        max-height: 100%;
+        margin-bottom: 3em;
+    }
+
+    .btn-nav {
+        font-size: 1rem;
+        padding: 0.7em 4em;
+    }
+
+    header  {
+        padding: 3em 4em;
+        background-image: url(/images/bg-hero-desktop.svg);
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+    .hero-text {
+        padding: 0;
+        font-size: 1.1rem;
+    }
+
+    .herro-img {
+        width: 52%;
+    }
+
+    .herro-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-text-container {
+        text-align: left;
+        width: 40%;
+    }
+
+    .btn-herro{
+        padding: 1.5em 5em;
+        font-size: 0.8rem;
+    }
+/*=================
+Main
+=================*/
+
+main {
+    margin-bottom: 12em;
+}
+
+    .feature {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 0.5em 2em 8em;
+        text-align: left;
+        margin: 7em 5em;
+    }
+
+    .img-wrapper {
+        text-align: right;
+    }
+
+    .img-wrapper-left {
+        order: -1;
+        text-align: left;
+    }
+
+
+    .feature-img {
+        max-width: 80%;
+    }
+
+    .feature h2  {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .feature-text-container {
+        max-width: 50%;
+    }
+
+    .feature-text {
+        font-size: 1.3rem;
+    }
+
+    .build-box {
+        width: 60%;
+        margin: 0 auto;
+        padding: 1em 6em;
+    }
+
+    .build-box h3 {
+        font-size: 2rem;
+    }
+
+    .build-box .btn {
+        font-size: 1.5rem;
+    }
+
+    .grid-container{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0 5em;
+    } 
+
+    .grid-container img {
+        grid-column: 1 / 6;
+    }
+    .contact {
+        grid-column: 1/3;
+        max-width: 70%;
+    }
+
+    .contact-location {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: hsl(193, 100%, 96%);
+    }
+
+ 
+.contact-tel,
+.contact-email,
+footer ul a {
+    font-size: 1.1rem;
+    color:hsl(193, 100%, 96%);
+}
+
+    .copy {
+        grid-column: 1 / 6;
+        text-align: right;
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+
+    .social-media-conainer {
+    align-items: flex-start;
+    }
+
+
+}
+
+
+
+
